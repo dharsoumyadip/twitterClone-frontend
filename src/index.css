@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,html,:root{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: rgb(231, 231, 231);
+}
+
+*{
+    box-sizing: border-box;
+    border-color: #2f3336;
+}
+
+*:disabled{
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+      font-size: 13px;
+    }
+  }
+  
+  /* Media query for screens between 601px and 900px wide */
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    :root {
+      font-size: 14px;
+    }
+  }
+  
+  /* Media query for screens 901px and wider */
+  @media screen and (min-width: 901px) {
+    :root {
+      font-size: 16px;
+    }
+  }
